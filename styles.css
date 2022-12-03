@@ -11,8 +11,8 @@ body {
 
 .calculatorBody {
     background-color: gray;
-    width: 600px;
-    height: 800px;
+    width: 570px;
+    height: 890px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,14 +20,41 @@ body {
     gap: 50px;
 }
 
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url('Calculator.ttf');
+}
+
 .displayValue {
     background-color: green;
-    width: 550px;
+    width: 480px;
     height: 200px;
+    color: white;
+    font-size: 120px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 20px;
+    font-family: 'digital-clock-font';
 }
 
 .buttons {
     background-color: black;
-    width: 550px;
-    height: 500px;
+    width: 470px;
+    height: 540px;
+    padding: 25px 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: orange;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
