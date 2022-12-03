@@ -8,6 +8,15 @@ buttonElements.forEach(buttonEl => {
     console.log(button)
     button.textContent = buttonEl
     button.classList.add('button')
-    button.classList.add(buttonEl)
+    
+    if(isNaN(buttonEl)) {
+        button.classList.add('operator')
+    } else {
+        button.classList.add(buttonEl)
+    }
+
+    if(buttonEl === 'Del') 
+    button.classList.add('Del')
+
     buttons.appendChild(button)
 })
