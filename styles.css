@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.topDiv {
+    margin: 100px;
+}
+
+.calculatorBody {
+    background-color: gray;
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.displayValue {
+    background-color: green;
+    width: 550px;
+    height: 200px;
+}
+
+.buttons {
+    background-color: black;
+    width: 550px;
+    height: 500px;
+}
