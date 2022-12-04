@@ -2,6 +2,7 @@ const buttons = document.querySelector('.buttons')
 const buttonElements = [
     'C', '+/-', '%', '=', '7', '8', '9', '+', '4', '5', '6', '-', '1', '2', '3', 'x', 'Del', '0', '.', '/'
 ]
+
 let numArr = []
 let operation
 let num1
@@ -66,4 +67,15 @@ function operate(operator) {
         case '%':
             return num2 % num1;
     }
+}
+
+const delButton = document.querySelector('.Del')
+delButton.removeEventListener('click', storeOperator)
+delButton.addEventListener('click', deleteButton)
+
+function deleteButton() {
+    numArr.pop();
+    displayValue.textContent = numArr.reduce((allNums, num) => {
+        return allNums + num
+    }, "")
 }
