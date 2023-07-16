@@ -1,3 +1,9 @@
-Building a web based calculator. Will take input and do basic arithmetic operations (add, subtract, multiply, divide) and maybe look pretty.
+In progress calculator
 
-Currently in progress.
+Bugs: 
+Arithmetic calculations fail when pressing buttons
+Numbers can go off screen
+
+Live preview below: 
+
+https://queben.github.io/calculator/
